@@ -1,0 +1,199 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,700;0,800;1,500&family=Outfit:wght@700&family=Roboto&family=Roboto+Mono&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.main{
+    text-align: center;
+    /* width: 750px; */
+    /* height: 450px; */
+    background-color: #ffffff;
+   display: flex;
+   justify-content: space-around;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    box-shadow: -11px -2px 25px -6px rgba(122,114,114,0.97);
+-webkit-box-shadow: -11px -2px 25px -6px rgba(122,114,114,0.97);
+-moz-box-shadow: -11px -2px 25px -6px rgba(122,114,114,0.97);
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    background-color: #4936f2;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+
+}
+.summary{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #ffffff;
+
+text-align: center;    width: 50%;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    
+}
+
+.summary-details-left,
+.summary-details-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+
+}
+
+.summary-details-right {
+  margin-left: auto;
+}
+h3{
+    padding: 20px;
+    color: #ccc4fd;
+}
+h1{
+     color: #ffff; ;
+text-align: center;
+display: flex;
+justify-content: center;
+font-size: 50px;
+flex-direction: column;
+margin-bottom: 0;
+
+
+}
+.of{
+    color: #7668f3;
+    position: relative;
+    bottom: 14%;
+    font-size: 10px;
+}
+.great{
+    margin-top: 0;
+    color:#ffffff;
+    font-weight: 1000;
+    font-size: 20px;
+    position: relative;
+    bottom: 5%;
+}
+.scored{
+    color: #d3d7ff;
+        text-align: center;
+        width: 70%;
+        font-size: 13px;
+        margin-bottom: 12%;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #442fe2;
+  }
+  .btn{
+    display: block;
+    flex-shrink: 0;
+    color: #ffffff;
+    background-color:#5c3dfa;
+    border-radius: 5px;
+    width: 40px;
+    text-align: center;
+    font-size: 10px;
+    height: 40px;
+    border: none;
+  }
+  .btn:hover{
+    background-color: #4828d5;
+    color: #000000;
+    cursor: pointer;
+    
+  }
+  .btn {
+    display: block;
+    align-self: flex-start; /* Align button to the start of the flex container */
+    margin-top: 10px; /* Add margin to separate the button from the summary details */
+  }
+  h2{
+    color:#474a69;
+    font-size: 15px;
+    padding: 20px;
+  }
+  .reaction{
+    color: #ffa9ad;
+  } 
+  .memory{
+    color: #ffc835;
+  }
+  .verbal{
+    color: #6ee3c6;
+  }
+  .visual{
+    color: #202775;
+  }
+.ii{
+    color: #cccdc7;
+}
+/* Mobile */
+
+@media (max-width:600px){
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 50vh;
+    }
+    .result{
+        width: 100%;
+        min-height: 50vh;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .summary{
+        min-height: 50vh;
+        width: 100%;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        width: 300px;
+        position: relative;
+        left: 12%;
+    }
+
+}
